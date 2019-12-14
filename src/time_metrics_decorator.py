@@ -24,11 +24,3 @@ class TimeMetricsDecorator:
     @staticmethod
     def register_publisher(metric_publisher):
         TimeMetricsDecorator._publisher = metric_publisher
-
-
-
-
-
-
-
-

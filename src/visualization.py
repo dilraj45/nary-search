@@ -22,17 +22,13 @@ class Graph:
     y_datapoints: List[int]
 
 
-# todo dilrasin: Rename this class
+# todo dilraj: Rename this class
 class Visualization:
 
     ActiveGraphSubPlotMappings = namedtuple('GraphFigureMapping', ['graph_handle', 'sub_plot', 'color'])
     active_graphs = []
     graphs = {}
     figure = plt.figure()
-
-    def __init__(self):
-        print("Turning on interactive mode")
-        # plt.ion()
 
     def publish_datapoint(self, graph_handle, x_value, y_value):
         graph = self.graphs[graph_handle]
